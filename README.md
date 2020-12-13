@@ -39,7 +39,7 @@ Branches:
 
 <!-- feature/create-post -->
 
-feature/comment
+<!-- feature/comment -->
 
 feature/login
 
