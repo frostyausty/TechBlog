@@ -33,14 +33,3 @@ THEN I am able to delete or update my post and taken back to an updated dashboar
 THEN I am signed out of the site -->
 WHEN I am idle on the page for more than a set time
 THEN I am automatically signed out of the site 
-
-Branches: 
-<!-- feature/user -->
-
-<!-- feature/create-post -->
-
-<!-- feature/comment -->
-
-feature/login
-
-feature/front-end
