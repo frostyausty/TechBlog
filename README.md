@@ -18,7 +18,7 @@ This repo contains a CMS-style blog website. Users can create an account to logi
 
 
 ## Deployed application on Heroku
-
+https://git.heroku.com/safe-oasis-72808.git 
 
 ## Link to GitHub Repo
 https://github.com/frostyausty/TechBlog
