@@ -1,0 +1,46 @@
+<section>
+    <h2>Create New Post</h2>
+    <form class="new-post">
+        <div>
+            <label for="post-title" class="new-post-header">Title</label>
+            <input type="text" id="post-title" name="post-title">
+        </div>
+        <div>
+            <label for="post-url" class="new-post-header">Link</label>
+            <input id="post-url" name="post-url">
+        </div>
+        <div>
+            <label for="post-text" class="new-post-header">Blog Text</label>
+            <textarea id="blog_text"></textarea>
+        </div>
+        <button type="submit" class="btn">Create Post</button>
+    </form>
+</section>
+
+<br>
+<br>
+
+<h2>My Posts</h2>
+<ol class="post-list">
+    {{#each posts as |post|}}
+    <li>
+        <article class="post">
+            <div class="title">
+                <a href="/post/{{id}}">{{post.title}}</a>
+                <span>({{post.post_url}})</span>
+                <div class ="blog-text">
+                    {{post.blog_text}}
+                </div>
+            </div>
+            <div class="meta">
+                Posted by {{post.user.username}} on 
+                {{post.created_at}}
+                |
+                <a href="/post/{{id}}">{{post.comments.length}} comment(s)</a>
+            </div>           
+        </article>
+    </li>
+    {{/each}}
+</ol>
+
+<script src="/javascript/create-post.js"></script>

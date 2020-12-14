@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title> Tech Blog </title>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>
+                    <a href="/">Tech Blog</a>
+                </h1>
+                <nav>
+                    <button id="home" class="btn-no-style"><a href="/">Home</a></button>
+                    <button id="dashboard" class="btn-no-style"><a href="/dashboard">Dashboard</a></button>
+                    <button id="logout" class="btn-no-style"><a href="/login">Logout</a></button>
+                    <button id ="login" class="btn-no-style"><a href="/login">Login</a></button>
+                </nav>
+            </header>
+            <main>
+                {{{ body }}}
+            </main>
+            <footer>
+                Created by developers, for developers.
+            </footer>
+        </div>
+        <script src="/javascript/logout.js"></script>
+    </body>
